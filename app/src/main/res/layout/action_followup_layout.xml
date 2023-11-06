@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/back_abi"
+    android:layout_marginBottom="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/exit_user_item_background"
+        android:backgroundTint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/log_header_shape_background"
+            android:backgroundTint="#00D852"
+            android:orientation="horizontal"
+            android:paddingStart="45dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="45dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اقدام"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/img_avatar_action_followup"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/img_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_layout"
+            app:siBorderColor="#fff"
+            app:siBorderType="stroke"
+            app:siBorderWidth="2dp" />
+
+        <TextView
+            android:id="@+id/txt_username_action_followup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="هادی سعیدی"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_avatar_action_followup"
+            app:layout_constraintEnd_toStartOf="@+id/img_avatar_action_followup"
+            app:layout_constraintTop_toTopOf="@+id/img_avatar_action_followup" />
+
+
+        <ImageView
+            android:id="@+id/btn_action_date_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:tint="#000000"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_date_icon"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+
+        <TextView
+            android:id="@+id/txt_action_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ اقدام"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="321dp" />
+
+        <TextView
+            android:id="@+id/txt_action_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="عنوان:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_avatar_action_followup"
+            app:layout_constraintTop_toBottomOf="@+id/img_avatar_action_followup" />
+
+        <TextView
+            android:id="@+id/txt_action_date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="وضعیت:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_action_date2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message_action_followup2" />
+
+        <TextView
+            android:id="@+id/txt_action_date4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ضمیمه:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_action_date3"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message_action_followup3" />
+
+        <ImageView
+            android:id="@+id/btn_action_time_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:tint="#000000"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_access_time_black_24dp"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="330dp" />
+
+        <TextView
+            android:id="@+id/txt_action_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ساعت اقدام"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+        <TextView
+            android:id="@+id/txt_message_action_followup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده  از طراحان گرافیک است "
+            android:textColor="#000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/img_avatar_action_followup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_avatar_action_followup" />
+
+        <TextView
+            android:id="@+id/txt_message_action_followup2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده  از طراحان گرافیک است "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_action_date2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_action_date2" />
+
+        <TextView
+            android:id="@+id/txt_message_action_followup3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده  از طراحان گرافیک است "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_action_date3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_action_date3" />
+
+        <TextView
+            android:id="@+id/txt_message_action_followup4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده  از طراحان گرافیک است "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_action_date4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_action_date4" />
+
+        <TextView
+            android:id="@+id/txt_semat_action_followup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="مدیر بخش انفورماتیک"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_username_action_followup"
+            app:layout_constraintEnd_toStartOf="@+id/txt_username_action_followup"
+            app:layout_constraintTop_toTopOf="@+id/txt_username_action_followup" />
+
+        <TextView
+            android:id="@+id/txt_date_action_followup"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="5 خرداد 97   20:30"
+            android:textColor="#A1000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView19"
+            app:layout_constraintVertical_bias="0.677" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ffrfr_4"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp"
+            android:text="مشاهده"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_action_date4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/header_layout"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message_action_followup4"
+            app:layout_constraintVertical_bias="0.486" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/white_only_top_32dp_radius_shape"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/btn_confirm"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_tick" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_users_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="اعضا"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/tabs_background_with_border_shape"
+            android:drawableStart="@drawable/ic_search_icon"
+            android:gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#707070"
+            android:textCursorDrawable="@null" />
+
+
+    </RelativeLayout>
+
+    <com.dd.ShadowLayout
+        android:id="@+id/tab_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_users_title"
+        app:sl_cornerRadius="56dp"
+        app:sl_shadowColor="#07000000"
+        app:sl_shadowRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tabs_background_with_border_shape">
+
+            <ImageView
+                android:id="@+id/img_tab_selection_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/tab_background_shape" />
+
+            <TextView
+                android:id="@+id/btn_hamkaran_tab"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="همکاران"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_two_third"
+                app:layout_constraintTop_toTopOf="@+id/img_tab_selection_background" />
+
+            <TextView
+                android:id="@+id/btn_groups_tab"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="گروه"
+                android:textColor="#707070"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_two_third"
+                app:layout_constraintStart_toEndOf="@id/guideline_one_third"
+                app:layout_constraintTop_toTopOf="@+id/img_tab_selection_background" />
+
+            <TextView
+                android:id="@+id/btn_personel_tab"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="پرسنل"
+                android:textColor="#707070"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_one_third"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_tab_selection_background" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66666666666" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_one_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3333333333" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_two_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66666666666" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.dd.ShadowLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_selected_users"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="visible" />
+
+    <ir.adak.Vect.UI.CustomViews.NonSwipeableViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:rotationY="180" />
+
+</LinearLayout>

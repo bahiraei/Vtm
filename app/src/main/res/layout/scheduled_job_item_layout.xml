@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_project_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/job_item_background_shape"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/job_type_layout"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_job_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/task_shape_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:id="@+id/txt_job_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="هدف" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:gravity="right|top"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_type_layout"
+            tools:text="خرید تجهیزات مجهز برای مرکز رایانه" />
+
+
+        <TextView
+            android:id="@+id/txt_scheduler_type_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text=" نوع زمانبندی :"
+            android:textColor="#707070"
+            app:layout_constraintEnd_toEndOf="@+id/txt_title"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+
+        <TextView
+            android:id="@+id/txt_scheduler_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#707070"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_scheduler_type_title"
+            app:layout_constraintEnd_toStartOf="@+id/txt_scheduler_type_title"
+            app:layout_constraintTop_toTopOf="@+id/txt_scheduler_type_title"
+            tools:text=" نوع زمانبندی :" />
+
+        <TextView
+            android:id="@+id/txt_duration_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="1"
+            android:text=" مدت زمان اجرا :"
+            android:textColor="#707070"
+            app:layout_constraintEnd_toEndOf="@id/txt_scheduler_type_title"
+            app:layout_constraintTop_toBottomOf="@id/txt_scheduler_type_title" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#707070"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_duration_title"
+            app:layout_constraintEnd_toStartOf="@+id/txt_duration_title"
+            app:layout_constraintTop_toTopOf="@+id/txt_duration_title"
+            tools:text=" مدت زمان اجرا :" />
+
+        <TextView
+            android:id="@+id/txt_next_date_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text=" تاریخ اجرای بعدی :"
+            android:textColor="#707070"
+            app:layout_constraintEnd_toEndOf="@id/txt_scheduler_type_title"
+            app:layout_constraintTop_toBottomOf="@id/txt_duration_title" />
+
+        <TextView
+            android:id="@+id/txt_next_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#707070"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_next_date_title"
+            app:layout_constraintEnd_toStartOf="@+id/txt_next_date_title"
+            app:layout_constraintTop_toTopOf="@+id/txt_next_date_title"
+            tools:text=" تاریخ اجرای بعدی :" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="مجری:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_next_date_title"
+            app:layout_constraintTop_toBottomOf="@+id/txt_next_date_title" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/img_highlight_project"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="#3E4B94F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

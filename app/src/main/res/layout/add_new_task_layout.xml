@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:text="عنوان"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edt_background_shape"
+            android:gravity="center_vertical|right"
+            android:hint="عنوان"
+            android:inputType="textNoSuggestions"
+            android:maxLength="500"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#A9A9A9"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_title" />
+
+        <TextView
+            android:id="@+id/txt_name_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="تاریخ نامه"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/txt_priority_type_title"
+            app:layout_constraintTop_toBottomOf="@+id/edt_title"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_name_date"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/unselected_tab_background_shape"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout_project_priority"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name_date_title">
+
+            <ImageView
+                android:id="@+id/btn_name_date_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_date_icon" />
+
+            <TextView
+                android:id="@+id/txt_name_date"
+                fontPath="fonts/irmob.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تاریخ نامه"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/view5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:background="#DDDDDD"
+                app:layout_constraintEnd_toStartOf="@+id/btn_name_date_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/txt_name_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="شماره نامه"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/edt_title"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edt_name_number"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edt_background_shape"
+            android:gravity="center_vertical|right"
+            android:hint="شماره نامه"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#A9A9A9"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name_number_title" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_project_type"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/edt_title"
+            app:layout_constraintStart_toStartOf="@+id/edt_title"
+            app:layout_constraintTop_toBottomOf="@+id/btn_name_date">
+
+            <Button
+                android:id="@+id/btn_project_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/selected_tab_background_shape"
+                android:text="پروژه"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_goal_tab"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <Button
+                android:id="@+id/btn_goal_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="هدف"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_project_tab"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_job_tab"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_job_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="کار"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_goal_tab"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_accident_tab"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <Button
+                android:id="@+id/btn_accident_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="حادثه"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_job_tab"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_problem_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="مشکل"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_offer_tab"
+                app:layout_constraintTop_toBottomOf="@id/btn_project_tab" />
+
+            <Button
+                android:id="@+id/btn_offer_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="پیشنهاد"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_problem_tab"
+                app:layout_constraintStart_toEndOf="@id/btn_offer2_tab"
+                app:layout_constraintTop_toBottomOf="@id/btn_project_tab" />
+
+            <Button
+                android:id="@+id/btn_offer2_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="پیشنهاد"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_offer_tab"
+                app:layout_constraintStart_toEndOf="@id/btn_offer3_tab"
+                app:layout_constraintTop_toBottomOf="@id/btn_project_tab" />
+
+            <Button
+                android:id="@+id/btn_offer3_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="پیشنهاد"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_offer2_tab"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_project_tab" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/txt_mojri_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="نوع"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_name_date"
+            app:layout_constraintTop_toBottomOf="@+id/edt_name_number"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_mojri_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="مجری"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_mojri_spinner"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edt_background_shape"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/btn_name_date"
+            app:layout_constraintStart_toStartOf="@+id/edt_name_number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mojri_title2">
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_mojri"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColorHint="#707070"
+                app:ms_hide_arrow="true"
+                app:ms_rtl="true"
+                app:ms_text_color="#A9A9A9" />
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginEnd="32dp"-->
+            <!--                android:text="مجری را انتخاب کنید ..."-->
+            <!--                android:textColor="#707070"-->
+            <!--                android:textSize="14sp" />-->
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_etebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="اعتبار"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/edt_etebar"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_mojri_spinner"
+              />
+
+        <EditText
+            android:id="@+id/edt_etebar"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edt_background_shape"
+            android:gravity="center_vertical|right"
+            android:hint="اعتبار"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#A9A9A9"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_name_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_etebar_title" />
+
+
+        <TextView
+            android:id="@+id/txt_priority_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="اهمیت"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/lyt_mojri_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/edt_etebar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_project_priority"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/constraint_date_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_priority_type_title">
+
+
+            <Button
+                android:id="@+id/btn_very_important_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="خیلی مهم"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_important_tab"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_normal_priority_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selected_normal_tab_background_shape"
+                android:text="عادی"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_important_tab"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                android:text="مهم"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_normal_priority_tab"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout_project_priority">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+
+            <TextView
+                android:id="@+id/txt_start_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:text="تاریخ شروع"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_start_date"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_start_date_title">
+
+                <ImageView
+                    android:id="@+id/btn_start_date_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_date_icon" />
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    fontPath="fonts/irmob.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ شروع"
+                    android:textColor="#A9A9A9"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:background="#DDDDDD"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_start_date_icon" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_end_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="تاریخ پایان"
+                android:textColor="#A9A9A9"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/btn_end_date"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_end_date"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/unselected_tab_background_shape"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_start_date">
+
+                <ImageView
+                    android:id="@+id/btn_end_date_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_date_icon" />
+
+                <TextView
+                    android:id="@+id/txt_end_date"
+                    fontPath="fonts/irmob.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ پایان"
+                    android:textColor="#A9A9A9"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/view2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:background="#DDDDDD"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_end_date_icon" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="توضیحات"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/txt_priority_type_title"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_date_layout"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edt_background_shape"
+            android:gravity="top|right"
+            android:hint="توضیحات"
+            android:maxLength="3000"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_date_layout" />
+
+        <ImageView
+            android:id="@+id/btn_add_user_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_priority_type_title"
+            app:layout_constraintTop_toBottomOf="@id/edt_description"
+            app:srcCompat="@drawable/ic_add_user" />
+
+        <TextView
+            android:id="@+id/txt_add_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="افزودن عضو"
+            android:textColor="#707070"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_add_user_icon"
+            app:layout_constraintEnd_toStartOf="@id/btn_add_user_icon"
+            app:layout_constraintTop_toTopOf="@id/btn_add_user_icon" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_user_icon" />
+        <Button
+            android:id="@+id/btn_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/btn_blue_shape"
+            android:text="ثبت وظیفه"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_users" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_mojri_title"
+            app:layout_constraintStart_toStartOf="@+id/edt_name_number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mojri_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

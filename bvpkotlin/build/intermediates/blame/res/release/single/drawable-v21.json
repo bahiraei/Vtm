@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a7cade8e09ad916d5077bec369f30f4d\\core-1.0.1\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\mtrl_popupmenu_background.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\drawable-v21\\mtrl_popupmenu_background.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\drawable-v21\\abc_list_divider_material.xml"
+    }
+]

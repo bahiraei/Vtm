@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_edittext.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_default.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_tint_switch_track.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/mdtp_date_picker_selector.xml",
+        "source": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/src/main/res/color/mdtp_date_picker_selector.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/mdtp_date_picker_year_selector.xml",
+        "source": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/src/main/res/color/mdtp_date_picker_year_selector.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/mdtp_done_text_color.xml",
+        "source": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/src/main/res/color/mdtp_done_text_color.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/mdtp_done_text_color_dark.xml",
+        "source": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/src/main/res/color/mdtp_done_text_color_dark.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/1450e96c4d59a8c25ab87fe3e26aa323/appcompat-1.0.0/res/color/abc_secondary_text_material_light.xml"
+    }
+]

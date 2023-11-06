@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_main_activity_background">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/img_avatar_new"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siBorderAlpha="1"
+                app:siBorderColor="@android:color/white"
+                app:siBorderWidth="2dp" />
+
+
+            <TextView
+                android:id="@+id/txt_username_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="صادق عالیپور"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:fontPath="@string/vazir_medium_font"
+                app:layout_constraintEnd_toStartOf="@+id/img_avatar_new"
+                app:layout_constraintTop_toTopOf="@id/img_avatar_new" />
+
+            <TextView
+                android:id="@+id/txt_semat_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:text="مدیر انفورماتیک"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:fontPath="@string/vazir_regular_font"
+                app:layout_constraintEnd_toStartOf="@+id/img_avatar_new"
+                app:layout_constraintTop_toBottomOf="@+id/txt_username_new" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_slide_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/slide_menu_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/img_avatar_new"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/img_avatar_new">
+
+                <ImageView
+                    android:id="@+id/btn_expand_new"
+                    android:layout_width="20dp"
+                    android:layout_height="38dp"
+                    android:rotation="-90"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_users_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_expand_new"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_single_user_icon"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کاربران"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_add_project_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_users_new"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_add_project" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ثبت پروژه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/white_only_top_32dp_radius_shape"
+                android:backgroundTint="#F3F6FF"
+                android:orientation="vertical"
+                android:paddingBottom="128dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_avatar_new">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/white_32dp_radius_shape"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lyt_backlog_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/img_backlog"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/dashed_16dp_radius_backlog"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <pl.looksoft.shadowlib.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationY="6dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shadowLayoutBlur="8dp"
+                                app:shadowLayoutColor="#400068FF"
+                                app:shadowLayoutDy="6dp"
+                                app:shadowLayoutSpread="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_backlog" />
+                                </RelativeLayout>
+                            </pl.looksoft.shadowlib.ShadowLayout>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_backlog_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="BackLog"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/vazir_medium_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_backlog"
+                            app:layout_constraintStart_toEndOf="@id/img_backlog"
+                            app:layout_constraintTop_toTopOf="@id/img_backlog" />
+
+                        <TextView
+                            android:id="@+id/txt_backlog_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="12"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/shabnam_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_backlog"
+                            app:layout_constraintEnd_toStartOf="@+id/backlog_arrow_shadow"
+                            app:layout_constraintTop_toTopOf="@id/img_backlog" />
+
+
+                        <pl.looksoft.shadowlib.ShadowLayout
+                            android:id="@+id/backlog_arrow_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shadowLayoutBlur="8dp"
+                            app:shadowLayoutColor="#400068FF"
+                            app:shadowLayoutDy="6dp"
+                            app:shadowLayoutSpread="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:background="@drawable/shape_white_oval"
+                                android:backgroundTint="@color/colorPrimary">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_marginStart="4dp"
+                                    android:rotation="-90"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                    android:tint="@android:color/white" />
+                            </RelativeLayout>
+
+                            <!--                        <Button-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:gravity="center"-->
+                            <!--                            android:minWidth="88dp"-->
+                            <!--                            android:minHeight="36dp"-->
+                            <!--                            android:text="Shadow"-->
+                            <!--                            android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+                            <!--                            android:textColor="@color/colorPrimary" />-->
+
+                        </pl.looksoft.shadowlib.ShadowLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lyt_todo_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F42828"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/img_todo"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/dashed_16dp_radius_todo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <pl.looksoft.shadowlib.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationY="6dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shadowLayoutBlur="8dp"
+                                app:shadowLayoutColor="#40F42828"
+                                app:shadowLayoutDy="6dp"
+                                app:shadowLayoutSpread="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="32dp"
+                                        android:layout_height="32dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_access_time_black_24dp"
+                                        android:tint="#F42828" />
+                                </RelativeLayout>
+                            </pl.looksoft.shadowlib.ShadowLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_todo_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Todo"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/vazir_medium_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_todo"
+                            app:layout_constraintStart_toEndOf="@id/img_todo"
+                            app:layout_constraintTop_toTopOf="@id/img_todo" />
+
+                        <TextView
+                            android:id="@+id/txt_todo_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="12"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/shabnam_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_todo"
+                            app:layout_constraintEnd_toStartOf="@+id/todo_arrow_shadow"
+                            app:layout_constraintTop_toTopOf="@id/img_todo" />
+
+
+                        <pl.looksoft.shadowlib.ShadowLayout
+                            android:id="@+id/todo_arrow_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shadowLayoutBlur="8dp"
+                            app:shadowLayoutColor="#40F42828"
+                            app:shadowLayoutDy="6dp"
+                            app:shadowLayoutSpread="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:background="@drawable/shape_white_oval"
+                                android:backgroundTint="#F42828">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_marginStart="4dp"
+                                    android:rotation="-90"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                    android:tint="@android:color/white" />
+                            </RelativeLayout>
+                        </pl.looksoft.shadowlib.ShadowLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lyt_doing_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4C428"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/img_doing"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/dashed_16dp_radius_doing"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <pl.looksoft.shadowlib.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationY="6dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shadowLayoutBlur="8dp"
+                                app:shadowLayoutColor="#40F4C428"
+                                app:shadowLayoutDy="6dp"
+                                app:shadowLayoutSpread="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/dashed_oval_doing">
+
+                                        <ImageView
+                                            android:layout_width="12dp"
+                                            android:layout_height="12dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/ic_check"
+                                            android:tint="#F4C428" />
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                            </pl.looksoft.shadowlib.ShadowLayout>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_doing_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Doing"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/vazir_medium_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_doing"
+                            app:layout_constraintStart_toEndOf="@id/img_doing"
+                            app:layout_constraintTop_toTopOf="@id/img_doing" />
+
+                        <TextView
+                            android:id="@+id/txt_doing_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="12"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/shabnam_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_doing"
+                            app:layout_constraintEnd_toStartOf="@+id/doing_arrow_shadow"
+                            app:layout_constraintTop_toTopOf="@id/img_doing" />
+
+
+                        <pl.looksoft.shadowlib.ShadowLayout
+                            android:id="@+id/doing_arrow_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shadowLayoutBlur="8dp"
+                            app:shadowLayoutColor="#40F4C428"
+                            app:shadowLayoutDy="6dp"
+                            app:shadowLayoutSpread="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:background="@drawable/shape_white_oval"
+                                android:backgroundTint="#F4C428">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_marginStart="4dp"
+                                    android:rotation="-90"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                    android:tint="@android:color/white" />
+                            </RelativeLayout>
+                        </pl.looksoft.shadowlib.ShadowLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lyt_done_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="24dp"
+                            android:background="#8DD384"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/img_done"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/dashed_16dp_radius_done"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <pl.looksoft.shadowlib.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:translationY="6dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shadowLayoutBlur="8dp"
+                                app:shadowLayoutColor="#408DD384"
+                                app:shadowLayoutDy="6dp"
+                                app:shadowLayoutSpread="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/done_oval_shape">
+
+                                        <ImageView
+                                            android:layout_width="12dp"
+                                            android:layout_height="12dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/ic_check"
+                                            android:tint="#8DD384" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </pl.looksoft.shadowlib.ShadowLayout>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_done_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Done"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/vazir_medium_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_done"
+                            app:layout_constraintStart_toEndOf="@id/img_done"
+                            app:layout_constraintTop_toTopOf="@id/img_done" />
+
+                        <TextView
+                            android:id="@+id/txt_done_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="12"
+                            android:textColor="#24243A"
+                            android:textSize="18sp"
+                            app:fontPath="@string/shabnam_font"
+                            app:layout_constraintBottom_toBottomOf="@id/img_done"
+                            app:layout_constraintEnd_toStartOf="@+id/done_arrow_shadow"
+                            app:layout_constraintTop_toTopOf="@id/img_done" />
+
+
+                        <pl.looksoft.shadowlib.ShadowLayout
+                            android:id="@+id/done_arrow_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shadowLayoutBlur="8dp"
+                            app:shadowLayoutColor="#408DD384"
+                            app:shadowLayoutDy="6dp"
+                            app:shadowLayoutSpread="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:background="@drawable/shape_white_oval"
+                                android:backgroundTint="#8DD384">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_marginStart="4dp"
+                                    android:rotation="-90"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                    android:tint="@android:color/white" />
+                            </RelativeLayout>
+                        </pl.looksoft.shadowlib.ShadowLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/white_16dp_radius_shape"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="خودم"
+                            android:textColor="#8DD384"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/white_8dp_radius_shape"
+                            android:backgroundTint="#4D8DD384"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="#8DD384"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="عضو"
+                            android:textColor="#F42828"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/white_8dp_radius_shape"
+                            android:backgroundTint="#4DF42828"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="#F42828"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="کل کارها"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/white_8dp_radius_shape"
+                            android:backgroundTint="#4D284FF4"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/white_16dp_radius_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+
+                    <com.dd.ShadowLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:sl_shadowColor="#0068FF"
+                        app:sl_shadowRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                            android:tint="@color/colorPrimary" />
+
+                    </com.dd.ShadowLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="حجم کارکرد همکاران"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:fontPath="@string/vazir_medium_font" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabIndicator="@drawable/ic_tab_indicator"
+
+            app:tabIndicatorFullWidth="false"
+            app:tabRippleColor="@null">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_unselected_chat" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_unselected_graph" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_unselected_chart" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

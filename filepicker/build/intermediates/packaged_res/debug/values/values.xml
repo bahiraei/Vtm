@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_gray">#ecedef</color>
+    <color name="checkbox_color">#FB4846</color>
+    <color name="checkbox_unchecked_color">#DFDFDF</color>
+    <color name="colorAccent">#284FF4</color>
+    <color name="colorPrimary">#da4d26</color>
+    <color name="colorPrimaryDark">#a93409</color>
+    <color name="row_active">#efefef</color>
+    <color name="search_icon_color">@android:color/white</color>
+    <color name="transparent_black">#94333232</color>
+    <dimen name="file_icon_height">40dp</dimen>
+    <dimen name="file_icon_width">40dp</dimen>
+    <dimen name="file_item_checkbox_size">22dp</dimen>
+    <dimen name="file_name_textSize">17sp</dimen>
+    <drawable name="tab_gray">@color/bg_gray</drawable>
+    <drawable name="tab_white">@android:color/white</drawable>
+    <string name="action_settings">تنظیمات</string>
+    <string name="all_files">همه فایلها</string>
+    <string name="all_images">همه عکس ها</string>
+    <string name="all_photos">همه عکس ها</string>
+    <string name="all_videos">همه ویدئوها</string>
+    <string formatted="false" name="attachments_num">%d</string>
+    <string formatted="false" name="attachments_title_text">(%d/%d)</string>
+    <string name="done">ارسال</string>
+    <string name="excel_title">XLS</string>
+    <string name="images">عکس ها</string>
+    <string name="no_camera_exists">No Application exists for camera!</string>
+    <string name="no_files_found">No Files Found</string>
+    <string name="pdf_title">PDF</string>
+    <string name="permission_filepicker_rationale">Storage permission is needed to access files.</string>
+    <string name="ppt_title">PPT</string>
+    <string name="select_doc_text">Select a document</string>
+    <string name="select_photo_text">Select a media</string>
+    <string name="txt_title">TXT</string>
+    <string name="videos">ویدئوها</string>
+    <string name="word_title">DOC</string>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/irmob.ttf</item>
+    </style>
+    <style name="LibAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+    </style>
+    <style name="PickerTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+    <style name="SmoothCheckBoxStyle">
+        <item name="color_checked">@color/checkbox_color</item>
+        <item name="color_unchecked">@android:color/white</item>
+        <item name="color_unchecked_stroke">@color/checkbox_unchecked_color</item>
+        <item name="color_tick">@android:color/white</item>
+    </style>
+    <declare-styleable name="SmoothCheckBox">
+        <attr format="integer" name="duration"/>
+        <attr format="dimension" name="stroke_width"/>
+        <attr format="color" name="color_tick"/>
+        <attr format="color" name="color_checked"/>
+        <attr format="color" name="color_unchecked"/>
+        <attr format="color" name="color_unchecked_stroke"/>
+    </declare-styleable>
+</resources>

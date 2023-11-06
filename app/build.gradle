@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "ir.adak.vtm"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0-alpha2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'com.github.devsideal:VectorChildFinder:1.0.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.facebook.fresco:fresco:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.sdsmdg.harjot:materialshadows:1.2.5'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.google.android.material:material:1.3.0-rc01'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "androidx.preference:preference:1.1.1"
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation ('com.alimuzaffar.lib:pinentryedittext:2.0.6')
+    implementation project(path: ':filepicker')
+    implementation 'com.github.stfalcon:stfalcon-imageviewer:0.1.0'
+    implementation project(path: ':PersianDatePicker')
+    implementation "com.xwray:groupie:2.5.1"
+    implementation "com.xwray:groupie-kotlin-android-extensions:2.5.1"
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.5'
+    implementation 'com.mikhaellopez:circularprogressbar:2.0.0'
+    implementation 'com.koushikdutta.ion:ion:2.2.1'
+    implementation project(path: ':bvpkotlin')
+    implementation 'com.vincan:medialoader:1.0.0'
+    implementation 'com.github.RomanTsarou:XPlayer:0.0.5'
+    implementation project(path: ':AudioRecorder')
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation "biz.laenger.android:vpbs:0.0.5"
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    implementation project(path: ':material_spinner')
+    implementation 'com.github.samanzamani.persiandate:PersianDate:0.7'
+    debugImplementation 'com.facebook.flipper:flipper:0.30.0'
+    debugImplementation 'com.facebook.soloader:soloader:0.8.0'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
+    implementation 'ru.gildor.coroutines:kotlin-coroutines-retrofit:1.1.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+    releaseImplementation 'com.facebook.flipper:flipper-noop:0.30.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.github.maciekczwa:shadowlib:1.0.2'
+}

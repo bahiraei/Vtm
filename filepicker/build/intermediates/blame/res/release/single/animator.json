@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\design_fab_hide_motion_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\design_fab_show_motion_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_hide_motion_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_btn_unelevated_state_list_anim.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_btn_state_list_anim.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_btn_state_list_anim.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_show_motion_spec.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\filepicker\\build\\intermediates\\res\\merged\\release\\animator\\mtrl_chip_state_list_anim.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\09b3025872077fb74bff39e9670d79fd\\material-1.0.0\\res\\animator\\mtrl_chip_state_list_anim.xml"
+    }
+]

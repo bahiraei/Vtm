@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <View
+        android:id="@+id/img_highlight_my_audio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="#604B94F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <com.github.siyamed.shapeimageview.CircularImageView-->
+<!--        android:id="@+id/img_avatar_my_audio"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:src="@drawable/img_avatar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:siBorderColor="#fff"-->
+<!--        app:siBorderType="stroke"-->
+<!--        app:siBorderWidth="2dp" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/my_normal_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_my_audio_reply_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reply_background_shape"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_my_audio_reply_side_bar"
+                android:layout_width="3dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/accident_side_shape"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_my_audio_reply_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/img_my_audio_reply_thumbnail"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="حیدر صاکی" />
+
+            <TextView
+                android:id="@+id/txt_my_audio_reply_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt_my_audio_reply_username"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_my_audio_reply_username"
+                tools:text="عکس" />
+
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/img_my_audio_reply_thumbnail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/img_my_audio_reply_side_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siBorderAlpha="0"
+                app:siRadius="4dp"
+                app:srcCompat="@drawable/ic_frame_landscape" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_username_my_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_my_audio_reply_layout"
+            tools:text="هادی سعیدی" />
+
+        <TextView
+            android:id="@+id/txt_semat_my_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#80000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_username_my_audio"
+            app:layout_constraintEnd_toStartOf="@+id/txt_username_my_audio"
+            app:layout_constraintTop_toTopOf="@+id/txt_username_my_audio"
+            tools:text="مدیر بخش انفورماتیک" />
+
+
+        <TextView
+            android:id="@+id/txt_track_position_my_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="0:35 / 5:14"
+            android:textColor="#A1000000"
+            android:tint="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_date_my_audio"
+            app:layout_constraintEnd_toEndOf="@+id/seekbar_my_audio"
+            app:layout_constraintTop_toTopOf="@+id/txt_date_my_audio" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekbar_my_audio"
+            style="@style/MySeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:progress="50"
+            android:progressBackgroundTint="#A1000000"
+            android:progressTint="#A1000000"
+            android:thumbTint="#A1000000"
+            app:layout_constraintEnd_toEndOf="@+id/txt_username_my_audio"
+            app:layout_constraintStart_toEndOf="@+id/img_play_pause_my_audio"
+            app:layout_constraintTop_toBottomOf="@+id/txt_username_my_audio" />
+
+        <ImageView
+            android:id="@+id/img_play_pause_my_audio"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="#707070"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_semat_my_audio"
+            app:srcCompat="@drawable/bvp_action_play" />
+
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar_my_audio"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:cpb_background_progressbar_color="#FFFFFF"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="0"
+            app:cpb_progressbar_color="#27D100"
+            app:cpb_progressbar_width="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_play_pause_my_audio"
+            app:layout_constraintEnd_toEndOf="@+id/img_play_pause_my_audio"
+            app:layout_constraintStart_toStartOf="@+id/img_play_pause_my_audio"
+            app:layout_constraintTop_toTopOf="@+id/img_play_pause_my_audio" />
+
+
+        <ImageView
+            android:id="@+id/btn_cancel_upload_my_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#A1000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar_my_audio"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar_my_audio"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar_my_audio"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar_my_audio"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/txt_date_my_audio"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#A1000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_play_pause_my_audio"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar_my_audio"
+            tools:text="1398/07/08 12:03"
+            tools:visibility="visible" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

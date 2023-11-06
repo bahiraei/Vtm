@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "405012105973",
+    "firebase_url": "https://adak-vtm.firebaseio.com",
+    "project_id": "adak-vtm",
+    "storage_bucket": "adak-vtm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405012105973:android:5588132d5847a8265b13bc",
+        "android_client_info": {
+          "package_name": "ir.adak.vtm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405012105973-p6us2fu9s4icai7v81lnj4vk9gju29og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXmpAr8PIZdSsz-u_A-dNBdPG3eJ68s1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405012105973-p6us2fu9s4icai7v81lnj4vk9gju29og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

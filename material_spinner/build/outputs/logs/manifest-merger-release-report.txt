@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml:1:1-55
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml:1:1-55
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml:1:1-55
+	package
+		ADDED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml:1:11-53
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml:1:1-55
+uses-sdk
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+		ADDED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+		ADDED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml
+		INJECTED from D:\Data\Vtm.Jbase1399.9.26\Vtm\material_spinner\src\main\AndroidManifest.xml

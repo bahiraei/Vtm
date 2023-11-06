@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bvp_subtitle_color">#FFFFFF</color>
+    <dimen name="bvp_button_size">48dp</dimen>
+    <dimen name="bvp_content_inset">16dp</dimen>
+    <dimen name="bvp_content_inset_half">8dp</dimen>
+    <dimen name="bvp_content_inset_iconbuttons">2dp</dimen>
+    <dimen name="bvp_content_inset_less">1dp</dimen>
+    <dimen name="bvp_negative_inset_large">-8dp</dimen>
+    <dimen name="bvp_negative_inset_small">-2dp</dimen>
+    <dimen name="bvp_subtitle_size">22sp</dimen>
+    <dimen name="bvp_text_size_large">18sp</dimen>
+    <dimen name="bvp_text_size_medium">14sp</dimen>
+    <dimen name="bvp_text_size_small">10sp</dimen>
+    <string name="brightness">Brightness: %1$d</string>
+    <string name="bvp_left">LEFT</string>
+    <string name="bvp_right">RIGHT</string>
+    <string name="seconds">%1$d seconds</string>
+    <string name="volume">Volume: %1$d</string>
+    <style name="MyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:height">40dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+    <declare-styleable name="BetterVideoPlayer">
+
+        <attr format="string" name="bvp_source"/>
+        <attr format="string" name="bvp_title"/>
+
+        <attr format="reference" name="bvp_playDrawable"/>
+        <attr format="reference" name="bvp_pauseDrawable"/>
+        <attr format="reference" name="bvp_restartDrawable"/>
+
+        <attr format="reference" name="bvp_menu"/>
+
+        <attr format="boolean" name="bvp_hideControlsOnPlay"/>
+        <attr format="boolean" name="bvp_autoPlay"/>
+        <attr format="boolean" name="bvp_loop"/>
+        <attr format="boolean" name="bvp_showTotalDuration"/>
+        <!--
+            Show a preview of the current progress on the bottom of the video.
+            Kind of like the Youtube player.
+        -->
+        <attr format="boolean" name="bvp_showBottomProgressBar"/>
+        <attr name="bvp_gestureType">
+            <enum name="NoGesture" value="0"/>
+            <enum name="SwipeGesture" value="1"/>
+            <enum name="DoubleTapGesture" value="2"/>
+        </attr>
+        <attr format="boolean" name="bvp_showToolbar"/>
+        <attr format="integer" name="bvp_hideControlsDuration"/>
+
+        <attr format="boolean" name="bvp_disableControls"/>
+
+        <attr format="boolean" name="bvp_autoFullscreen"/>
+
+        <attr format="dimension" name="bvp_captionSize"/>
+        <attr format="color" name="bvp_captionColor"/>
+
+    </declare-styleable>
+</resources>

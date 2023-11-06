@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Data\\Vtm\\AudioRecorder\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\57105cf8684d9721da2d8e94e05c8918\\core-1.0.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\AudioRecorder\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\57105cf8684d9721da2d8e94e05c8918\\core-1.0.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\AudioRecorder\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\57105cf8684d9721da2d8e94e05c8918\\core-1.0.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Data\\Vtm\\AudioRecorder\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\57105cf8684d9721da2d8e94e05c8918\\core-1.0.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]

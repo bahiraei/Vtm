@@ -1,0 +1,58 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="droidninja.filepicker"
+4    android:versionCode="1"
+5    android:versionName="2.2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:5:5-81
+11-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:6:5-80
+12-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:6:22-77
+13
+14    <application
+14-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:8:5-28:19
+15        android:allowBackup="true"
+15-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:9:9-35
+16        android:supportsRtl="true" >
+16-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:10:9-35
+17        <activity
+17-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:12:9-14:62
+18            android:name="droidninja.filepicker.FilePickerActivity"
+18-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:13:13-47
+19            android:configChanges="orientation|screenSize" />
+19-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:14:13-59
+20        <activity
+20-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:15:9-17:62
+21            android:name="droidninja.filepicker.MediaDetailsActivity"
+21-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:16:13-49
+22            android:configChanges="orientation|screenSize" />
+22-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:17:13-59
+23
+24        <provider
+24-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:19:9-27:20
+25            android:name="droidninja.filepicker.utils.FilePickerProvider"
+25-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:20:13-53
+26            android:authorities="${applicationId}.droidninja.filepicker.provider"
+26-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:21:13-82
+27            android:exported="false"
+27-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:22:13-37
+28            android:grantUriPermissions="true" >
+28-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:23:13-47
+29            <meta-data
+29-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:24:13-26:58
+30                android:name="android.support.FILE_PROVIDER_PATHS"
+30-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:25:17-67
+31                android:resource="@xml/provider_paths" />
+31-->D:\Data\Vtm.Jbase1399.9.26\Vtm\filepicker\src\main\AndroidManifest.xml:26:17-55
+32        </provider>
+33    </application>
+34
+35</manifest>

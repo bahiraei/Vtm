@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+dimen aar_bubble_size
+dimen aar_footer_height
+dimen aar_wave_height
+drawable aar_ic_check
+drawable aar_ic_clear
+drawable aar_ic_pause
+drawable aar_ic_play
+drawable aar_ic_rec
+drawable aar_ic_restart
+drawable aar_ic_stop
+id action_save
+id content
+id play
+id record
+id restart
+id status
+id timer
+layout aar_activity_audio_recorder
+menu aar_audio_recorder
+string aar_paused
+string aar_playing
+string aar_recording
+string aar_save
+string app_name

@@ -1,0 +1,116 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,1062,1166",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,1161,1277"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "21,22",
+                        "startColumns": "4,4",
+                        "startOffsets": "1282,1404",
+                        "endColumns": "121,133",
+                        "endOffsets": "1399,1533"
+                    }
+                },
+                {
+                    "source": "D:\\Data\\Vtm\\bvpkotlin\\src\\main\\res\\values-large\\dimens.xml",
+                    "from": {
+                        "startLines": "12,3,4,6,5,14,15,10,9,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "429,56,105,213,159,477,533,377,325,274",
+                        "endColumns": "46,48,53,59,53,55,55,50,51,50",
+                        "endOffsets": "471,100,154,268,208,528,584,423,372,320"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "532,579,628,682,742,796,852,908,959,1011",
+                        "endColumns": "46,48,53,59,53,55,55,50,51,50",
+                        "endOffsets": "574,623,677,737,791,847,903,954,1006,1057"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Data\\Vtm\\bvpkotlin\\build\\intermediates\\res\\merged\\release\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\83c9a1e9a3252bc0fc32beca41eda895\\appcompat-1.0.2\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,1062,1166",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,1161,1277"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\NimaMoradi\\.gradle\\caches\\transforms-2\\files-2.1\\a74aa1b2cb3ef590f12bc7517912a6e6\\material-1.1.0-alpha02\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "21,22",
+                        "startColumns": "4,4",
+                        "startOffsets": "1282,1404",
+                        "endColumns": "121,133",
+                        "endOffsets": "1399,1533"
+                    }
+                },
+                {
+                    "source": "D:\\Data\\Vtm\\bvpkotlin\\src\\main\\res\\values-large\\dimens.xml",
+                    "from": {
+                        "startLines": "12,3,4,6,5,14,15,10,9,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "429,56,105,213,159,477,533,377,325,274",
+                        "endColumns": "46,48,53,59,53,55,55,50,51,50",
+                        "endOffsets": "471,100,154,268,208,528,584,423,372,320"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "532,579,628,682,742,796,852,908,959,1011",
+                        "endColumns": "46,48,53,59,53,55,55,50,51,50",
+                        "endOffsets": "574,623,677,737,791,847,903,954,1006,1057"
+                    }
+                }
+            ]
+        }
+    ]
+}

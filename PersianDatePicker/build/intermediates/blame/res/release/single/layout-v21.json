@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/57105cf8684d9721da2d8e94e05c8918/core-1.0.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/57105cf8684d9721da2d8e94e05c8918/core-1.0.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/57105cf8684d9721da2d8e94e05c8918/core-1.0.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/PersianDatePicker/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/heydarsaki/.gradle/caches/transforms-2/files-2.1/57105cf8684d9721da2d8e94e05c8918/core-1.0.0/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

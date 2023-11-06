@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".UI.Activities.ProjectDetailsActivity.ProjectDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_backgrund"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/img_avatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siBorderColor="#fff"
+                app:siBorderType="stroke"
+                app:siBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txt_creator_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lineSpacingExtra="6dp"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/img_avatar"
+                app:layout_constraintStart_toEndOf="@+id/btn_more_menu"
+                app:layout_constraintTop_toTopOf="@+id/img_avatar"
+                tools:text="ایجاد کننده زهرا باقریان (کارشناس مسئول واحد انفورماتیک)" />
+
+
+            <TextView
+                android:id="@+id/txt_users_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="0 نفر"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:fontPath="@string/irmob_font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/txt_creator_name" />
+
+            <ImageView
+                android:id="@+id/btn_more_menu"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_avatar"
+                app:srcCompat="@drawable/ic_more" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/txt_meeting_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_header"
+            tools:text="خرید تجهیزات مجهز برای مرکز رایانه  " />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_meeting_title"
+            app:srcCompat="@drawable/ic_information" />
+
+        <TextView
+            android:id="@+id/txt_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="توضیحات"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintEnd_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textColor="#707070"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description_title" />
+
+        <TextView
+            android:id="@+id/txt_start_time_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:text="ساعت شروع :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_start_time_icon"
+            app:layout_constraintEnd_toStartOf="@+id/img_start_time_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_start_time_icon" />
+
+        <TextView
+            android:id="@+id/txt_start_time"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_start_time_icon"
+            app:layout_constraintEnd_toStartOf="@+id/txt_start_time_title"
+            app:layout_constraintTop_toTopOf="@+id/img_start_time_icon"
+            tools:text="09:00" />
+
+        <TextView
+            android:id="@+id/txt_end_time_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:text="ساعت پایان :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_start_time_icon"
+            app:layout_constraintEnd_toStartOf="@+id/img_end_time_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_start_time_icon" />
+
+        <TextView
+            android:id="@+id/txt_end_time"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_start_time_icon"
+            app:layout_constraintEnd_toStartOf="@+id/txt_end_time_title"
+            app:layout_constraintTop_toTopOf="@+id/img_start_time_icon"
+            tools:text="09:00" />
+
+        <ImageView
+            android:id="@+id/img_start_time_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/img_date_icon"
+            app:layout_constraintTop_toBottomOf="@+id/img_date_icon"
+            app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+        <ImageView
+            android:id="@+id/img_end_time_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/img_start_time_icon"
+            app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/img_date_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/txt_description"
+            app:layout_constraintTop_toBottomOf="@id/txt_description"
+            app:srcCompat="@drawable/ic_date_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_date_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:text="تاریخ جلسه :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_date_icon"
+            app:layout_constraintEnd_toStartOf="@+id/img_date_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_date_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_date"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_date_icon"
+            app:layout_constraintEnd_toStartOf="@+id/txt_meeting_date_title"
+            app:layout_constraintTop_toTopOf="@+id/img_date_icon"
+            tools:text="1398/08/01" />
+
+
+        <ImageView
+            android:id="@+id/img_boss_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/img_start_time_icon"
+            app:layout_constraintTop_toBottomOf="@+id/img_start_time_icon"
+            app:srcCompat="@drawable/ic_single_user_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_boss_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:text="رئیس جلسه :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_boss_icon"
+            app:layout_constraintEnd_toStartOf="@+id/img_boss_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_boss_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_boss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_boss_icon"
+            app:layout_constraintEnd_toStartOf="@+id/txt_meeting_boss_title"
+            app:layout_constraintTop_toTopOf="@+id/img_boss_icon"
+            tools:text="هادی سعیدی" />
+
+        <ImageView
+            android:id="@+id/img_dabir_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/img_boss_icon"
+            app:srcCompat="@drawable/ic_single_user_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_dabir_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:text="دبیر جلسه :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_dabir_icon"
+            app:layout_constraintEnd_toStartOf="@+id/img_dabir_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_dabir_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_dabir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_boss_icon"
+            app:layout_constraintEnd_toStartOf="@+id/txt_meeting_dabir_title"
+            app:layout_constraintTop_toTopOf="@+id/img_boss_icon"
+            tools:text="هادی سعیدی" />
+
+
+        <ImageView
+            android:id="@+id/img_location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/img_start_time_icon"
+            app:layout_constraintTop_toBottomOf="@+id/img_boss_icon"
+            app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/txt_meeting_location_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="مکان برگزاری :"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/img_location_icon"
+            app:layout_constraintTop_toTopOf="@+id/img_location_icon" />
+
+        <TextView
+            android:id="@+id/txt_meeting_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_meeting_location_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_location_icon"
+            tools:text="ساختمان مرکزی ، سالن جلسات" />
+
+        <View
+            android:id="@+id/first_divider"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="#F4F6FF"
+            app:layout_constraintTop_toBottomOf="@id/txt_meeting_location" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintTop_toBottomOf="@id/first_divider">
+
+            <ImageView
+                android:id="@+id/img_tab_selection_background"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:srcCompat="@drawable/tab_background_shape" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_users_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_half"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_users_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="اعضا"
+                    android:textColor="#707070"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_users_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:tint="#707070"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_group_users_icon" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_half"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ir.adak.Vect.UI.CustomViews.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_tabs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

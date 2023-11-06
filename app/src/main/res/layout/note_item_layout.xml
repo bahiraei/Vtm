@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/job_item_background_shape"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:gravity="right|top"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/img_side_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="خرید تجهیزات مجهز برای مرکز رایانه" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#707070"
+            app:layout_constraintEnd_toEndOf="@+id/txt_title"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"
+            tools:text="هادی سعیدی" />
+
+
+        <TextView
+            android:id="@+id/txt_note_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#727272"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_note_date_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_note_date_title"
+            tools:text="1398/08/03" />
+
+        <TextView
+            android:id="@+id/txt_note_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#727272"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/reminder_layout"
+            app:layout_constraintStart_toEndOf="@+id/txt_note_date"
+            app:layout_constraintTop_toTopOf="@+id/reminder_layout" />
+
+
+        <ImageView
+            android:id="@+id/img_side_bar"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/job_side_shape" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reminder_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_description"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description">
+
+            <ImageView
+                android:id="@+id/img_reminder_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_access_time_black_24dp" />
+            <TextView
+                android:id="@+id/txt_note_reminder_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lineSpacingExtra="6sp"
+                android:textColor="#727272"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_reminder_icon"
+                app:layout_constraintEnd_toStartOf="@+id/img_reminder_icon"
+                app:layout_constraintTop_toTopOf="@+id/img_reminder_icon"
+                android:text="یادآور :" />
+
+            <TextView
+                android:id="@+id/txt_note_time_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lineSpacingExtra="6sp"
+                android:textColor="#727272"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_reminder_icon"
+                app:layout_constraintEnd_toStartOf="@+id/txt_note_reminder_title"
+                app:layout_constraintTop_toTopOf="@+id/img_reminder_icon"
+                tools:text="sdfghjfd" />
+
+
+
+            <TextView
+                android:id="@+id/txt_note_date_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lineSpacingExtra="6sp"
+                android:textColor="#727272"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_reminder_icon"
+                app:layout_constraintEnd_toStartOf="@+id/txt_note_time_reminder"
+                app:layout_constraintTop_toTopOf="@+id/img_reminder_icon"
+                tools:text="sdfghjk" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/img_highlight_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="#3E4B94F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

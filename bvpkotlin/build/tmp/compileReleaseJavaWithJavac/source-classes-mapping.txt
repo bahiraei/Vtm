@@ -1,0 +1,4 @@
+com/halilibo/bvpkotlin/OnDownloadClicked.java
+ com.halilibo.bvpkotlin.OnDownloadClicked
+com/halilibo/bvpkotlin/BuildConfig.java
+ com.halilibo.bvpkotlin.BuildConfig

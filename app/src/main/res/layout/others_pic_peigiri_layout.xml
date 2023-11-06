@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginBottom="8dp">
+
+    <View
+        android:id="@+id/img_highlight_others_pic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="#604B94F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <com.github.siyamed.shapeimageview.CircularImageView-->
+<!--        android:id="@+id/img_avatar_others_pic"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:src="@drawable/img_avatar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:siBorderColor="#fff"-->
+<!--        app:siBorderType="stroke"-->
+<!--        app:siBorderWidth="2dp" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/others_normal_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_others_pic_reply_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reply_background_shape"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_others_pic_reply_side_bar"
+                android:layout_width="3dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/accident_side_shape"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_others_pic_reply_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/img_others_pic_reply_thumbnail"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="حیدر صاکی" />
+
+            <TextView
+                android:id="@+id/txt_others_pic_reply_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt_others_pic_reply_username"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_others_pic_reply_username"
+                tools:text="عکس" />
+
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/img_others_pic_reply_thumbnail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/img_others_pic_reply_side_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siBorderAlpha="0"
+                app:siRadius="4dp"
+                app:srcCompat="@drawable/ic_frame_landscape" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/txt_username_others_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="هادی سعیدی"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_others_pic_reply_layout" />
+
+
+        <TextView
+            android:id="@+id/txt_semat_others_pic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:text="مدیر بخش انفورماتیک"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_username_others_pic"
+            app:layout_constraintEnd_toStartOf="@+id/txt_username_others_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_username_others_pic" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_others_pic"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_username_others_pic" />
+
+
+        <View
+            android:id="@+id/img_others_pic_foreground"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/image_peigiri_foreground_gradient"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar_others_pic" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_others_pic" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar_others_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:cpb_background_progressbar_color="#FFFFFF"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="0"
+            app:cpb_progressbar_color="#27D100"
+            app:cpb_progressbar_width="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_others_pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/btn_cancel_download_others_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar_others_pic"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar_others_pic"
+            app:srcCompat="@drawable/ic_arrow_downward_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_date_others_pic"
+            fontPath="fonts/irmob.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#A1000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            tools:text="5 خرداد 97   20:30" />
+
+        <TextView
+            android:id="@+id/txt_file_size_others_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#A1000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_others_pic"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            tools:text="301 KB" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

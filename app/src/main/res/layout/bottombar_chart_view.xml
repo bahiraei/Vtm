@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.looksoft.shadowlib.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chart_shadow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:shadowLayoutBlur="8dp"
+    app:shadowLayoutDy="6dp"
+    app:shadowLayoutSpread="10dp">
+
+    <ImageView
+        android:id="@+id/img_chart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_unselected_chart" />
+</pl.looksoft.shadowlib.ShadowLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3" xmlns:ns1="http://schemas.android.com/tools"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res"/><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/build/generated/res/rs/release"/><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res"><file name="ms__menu_down" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable/ms__menu_down.xml" qualifiers="" type="drawable"/><file name="ms__arrow" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable/ms__arrow.xml" qualifiers="" type="drawable"/><file name="ms__selector" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable/ms__selector.xml" qualifiers="" type="drawable"/><file name="ms__drawable" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable/ms__drawable.xml" qualifiers="" type="drawable"/><file name="ms__list_item" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/layout/ms__list_item.xml" qualifiers="" type="layout"/><file path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/values/dimens.xml" qualifiers=""><dimen name="ms__padding_left">24dp</dimen><dimen name="ms__padding_top">12dp</dimen><dimen name="ms__item_height">48dp</dimen><dimen name="ms__popup_padding_left">24dp</dimen><dimen name="ms__popup_padding_top">12dp</dimen></file><file path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="MaterialSpinner" ns1:ignore="ResourceName">
+    <attr format="color" name="ms_arrow_tint"/>
+    <attr format="boolean" name="ms_hide_arrow"/>
+    <attr format="color" name="ms_background_color"/>
+    <attr format="color" name="ms_text_color"/>
+    <attr format="dimension" name="ms_dropdown_max_height"/>
+    <attr format="dimension" name="ms_dropdown_height">
+      <enum name="fill_parent" value="-1"/>
+      <enum name="match_parent" value="-1"/>
+      <enum name="wrap_content" value="-2"/>
+    </attr>
+    <attr format="integer" name="ms_background_selector"/>
+    <attr format="boolean" name="ms_rtl"/>
+    <attr format="dimension" name="ms_padding_top"/>
+    <attr format="dimension" name="ms_padding_left"/>
+    <attr format="dimension" name="ms_padding_bottom"/>
+    <attr format="dimension" name="ms_padding_right"/>
+    <attr format="dimension" name="ms_popup_padding_top"/>
+    <attr format="dimension" name="ms_popup_padding_left"/>
+    <attr format="dimension" name="ms_popup_padding_bottom"/>
+    <attr format="dimension" name="ms_popup_padding_right"/>
+    <attr format="string" name="ms_hint"/>
+    <attr format="color" name="ms_hint_color"/>
+  </declare-styleable></file><file name="ms__shadow_background" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable-xhdpi/ms__shadow_background.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ms__shadow_background" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable-xxhdpi/ms__shadow_background.9.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ms__drop_down_shadow" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable-hdpi/ms__drop_down_shadow.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ms__selector" path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/main/res/drawable-v21/ms__selector.xml" qualifiers="v21" type="drawable"/></source><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/build/generated/res/rs/release"/><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/heydarsaki/Documents/Programming/Projects/AndroidProjects/Adak/Vtm/material_spinner/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MaterialSpinner" ns1:ignore="ResourceName">
+    <attr format="color" name="ms_arrow_tint"/>
+    <attr format="boolean" name="ms_hide_arrow"/>
+    <attr format="color" name="ms_background_color"/>
+    <attr format="color" name="ms_text_color"/>
+    <attr format="dimension" name="ms_dropdown_max_height"/>
+    <attr format="dimension" name="ms_dropdown_height">
+      <enum name="fill_parent" value="-1"/>
+      <enum name="match_parent" value="-1"/>
+      <enum name="wrap_content" value="-2"/>
+    </attr>
+    <attr format="integer" name="ms_background_selector"/>
+    <attr format="boolean" name="ms_rtl"/>
+    <attr format="dimension" name="ms_padding_top"/>
+    <attr format="dimension" name="ms_padding_left"/>
+    <attr format="dimension" name="ms_padding_bottom"/>
+    <attr format="dimension" name="ms_padding_right"/>
+    <attr format="dimension" name="ms_popup_padding_top"/>
+    <attr format="dimension" name="ms_popup_padding_left"/>
+    <attr format="dimension" name="ms_popup_padding_bottom"/>
+    <attr format="dimension" name="ms_popup_padding_right"/>
+    <attr format="string" name="ms_hint"/>
+    <attr format="color" name="ms_hint_color"/>
+  </declare-styleable></configuration></mergedItems></merger>
